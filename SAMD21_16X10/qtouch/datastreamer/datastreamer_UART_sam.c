@@ -115,13 +115,13 @@ void datastreamer_output(void)
 	uint8_t           u8temp_output, send_header;
 	volatile uint16_t count_bytes_out;
 
-	send_header = sequence & (0x0f);
+/*	send_header = sequence & (0x0f);
 	if (send_header == 0) {
 		for (i = 0; i < sizeof(data); i++) {
 	//		datastreamer_transmit(data[i]);
 		}
 	}
-
+*/
 	// Start token
 //	datastreamer_transmit(0x55);
 
@@ -139,7 +139,11 @@ void datastreamer_output(void)
 // 		while (!usart_async_is_tx_empty(&USART))
 // 		;
 
-		io_write(&USART.io, (uint8_t *)" ", 1);
+
+//this part is to print the identifier of the taxel
+//---------------------------------------------------
+		
+/*		io_write(&USART.io, (uint8_t *)" ", 1);
 		while (!usart_async_is_tx_empty(&USART))
 		;
 			
@@ -147,12 +151,19 @@ void datastreamer_output(void)
 		
 		io_write(&USART.io, (uint8_t *)buff, strlen(buff));
 		while (!usart_async_is_tx_empty(&USART))
-		;		
+		;
+*/				
+//ends here
+//-----------------------------------------------------
 
 // 		io_write(&USART.io, (uint8_t *)")", 1);
 // 		while (!usart_async_is_tx_empty(&USART))
 // 		;
 		
+
+//adding two spaces here for safety
+//----------------------------------
+/*
 		io_write(&USART.io, (uint8_t *)" ", 1);
 		while (!usart_async_is_tx_empty(&USART))
 		;
@@ -160,12 +171,20 @@ void datastreamer_output(void)
 		io_write(&USART.io, (uint8_t *)" ", 1);
 		while (!usart_async_is_tx_empty(&USART))
 		;
-		
+*/
+//---------------------------------------		
+//adding safety spaces end here
 		utoa(u16temp_output, buff, 10);
 		
 		io_write(&USART.io, (uint8_t *)buff, strlen(buff));
 		while (!usart_async_is_tx_empty(&USART))
 		;
+		
+		//added this extra space for safety only when not printing identifier
+		io_write(&USART.io, (uint8_t *)" ", 1);
+		while (!usart_async_is_tx_empty(&USART))
+		;
+		//ends here
 		
 		io_write(&USART.io, (uint8_t *)" ", 1);
 		while (!usart_async_is_tx_empty(&USART))
@@ -180,14 +199,14 @@ void datastreamer_output(void)
 		
 
 		/* Reference */
-		u16temp_output = get_sensor_node_reference(count_bytes_out);
+	//	u16temp_output = get_sensor_node_reference(count_bytes_out);
 	//	datastreamer_transmit((uint8_t)u16temp_output);
 	//	datastreamer_transmit((uint8_t)(u16temp_output >> 8u));
 
 		/* Touch delta */
-		temp_int_calc = get_sensor_node_signal(count_bytes_out);
-		temp_int_calc -= get_sensor_node_reference(count_bytes_out);
-		u16temp_output = (uint16_t)(temp_int_calc);
+	//	temp_int_calc = get_sensor_node_signal(count_bytes_out);
+	//	temp_int_calc -= get_sensor_node_reference(count_bytes_out);
+	//	u16temp_output = (uint16_t)(temp_int_calc);
 	//	datastreamer_transmit((uint8_t)u16temp_output);
 	//	datastreamer_transmit((uint8_t)(u16temp_output >> 8u));
 

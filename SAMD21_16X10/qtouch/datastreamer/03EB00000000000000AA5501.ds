@@ -1,0 +1,989 @@
+
+
+
+B,1,1,FrameCounter
+
+
+
+
+
+
+
+
+
+
+
+
+D,2,1,Signal0
+D,3,1,Reference0
+-D,4,1,Delta0
+D,5,1,Compensation0,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,1,State0
+B,7,1,Threshold0
+D,2,2,Signal1
+D,3,2,Reference1
+-D,4,2,Delta1
+D,5,2,Compensation1,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,2,State1
+B,7,2,Threshold1
+D,2,3,Signal2
+D,3,3,Reference2
+-D,4,3,Delta2
+D,5,3,Compensation2,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,3,State2
+B,7,3,Threshold2
+D,2,4,Signal3
+D,3,4,Reference3
+-D,4,4,Delta3
+D,5,4,Compensation3,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,4,State3
+B,7,4,Threshold3
+D,2,5,Signal4
+D,3,5,Reference4
+-D,4,5,Delta4
+D,5,5,Compensation4,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,5,State4
+B,7,5,Threshold4
+D,2,6,Signal5
+D,3,6,Reference5
+-D,4,6,Delta5
+D,5,6,Compensation5,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,6,State5
+B,7,6,Threshold5
+D,2,7,Signal6
+D,3,7,Reference6
+-D,4,7,Delta6
+D,5,7,Compensation6,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,7,State6
+B,7,7,Threshold6
+D,2,8,Signal7
+D,3,8,Reference7
+-D,4,8,Delta7
+D,5,8,Compensation7,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,8,State7
+B,7,8,Threshold7
+D,2,9,Signal8
+D,3,9,Reference8
+-D,4,9,Delta8
+D,5,9,Compensation8,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,9,State8
+B,7,9,Threshold8
+D,2,10,Signal9
+D,3,10,Reference9
+-D,4,10,Delta9
+D,5,10,Compensation9,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,10,State9
+B,7,10,Threshold9
+D,2,11,Signal10
+D,3,11,Reference10
+-D,4,11,Delta10
+D,5,11,Compensation10,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,11,State10
+B,7,11,Threshold10
+D,2,12,Signal11
+D,3,12,Reference11
+-D,4,12,Delta11
+D,5,12,Compensation11,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,12,State11
+B,7,12,Threshold11
+D,2,13,Signal12
+D,3,13,Reference12
+-D,4,13,Delta12
+D,5,13,Compensation12,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,13,State12
+B,7,13,Threshold12
+D,2,14,Signal13
+D,3,14,Reference13
+-D,4,14,Delta13
+D,5,14,Compensation13,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,14,State13
+B,7,14,Threshold13
+D,2,15,Signal14
+D,3,15,Reference14
+-D,4,15,Delta14
+D,5,15,Compensation14,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,15,State14
+B,7,15,Threshold14
+D,2,16,Signal15
+D,3,16,Reference15
+-D,4,16,Delta15
+D,5,16,Compensation15,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,16,State15
+B,7,16,Threshold15
+D,2,17,Signal16
+D,3,17,Reference16
+-D,4,17,Delta16
+D,5,17,Compensation16,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,17,State16
+B,7,17,Threshold16
+D,2,18,Signal17
+D,3,18,Reference17
+-D,4,18,Delta17
+D,5,18,Compensation17,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,18,State17
+B,7,18,Threshold17
+D,2,19,Signal18
+D,3,19,Reference18
+-D,4,19,Delta18
+D,5,19,Compensation18,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,19,State18
+B,7,19,Threshold18
+D,2,20,Signal19
+D,3,20,Reference19
+-D,4,20,Delta19
+D,5,20,Compensation19,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,20,State19
+B,7,20,Threshold19
+D,2,21,Signal20
+D,3,21,Reference20
+-D,4,21,Delta20
+D,5,21,Compensation20,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,21,State20
+B,7,21,Threshold20
+D,2,22,Signal21
+D,3,22,Reference21
+-D,4,22,Delta21
+D,5,22,Compensation21,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,22,State21
+B,7,22,Threshold21
+D,2,23,Signal22
+D,3,23,Reference22
+-D,4,23,Delta22
+D,5,23,Compensation22,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,23,State22
+B,7,23,Threshold22
+D,2,24,Signal23
+D,3,24,Reference23
+-D,4,24,Delta23
+D,5,24,Compensation23,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,24,State23
+B,7,24,Threshold23
+D,2,25,Signal24
+D,3,25,Reference24
+-D,4,25,Delta24
+D,5,25,Compensation24,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,25,State24
+B,7,25,Threshold24
+D,2,26,Signal25
+D,3,26,Reference25
+-D,4,26,Delta25
+D,5,26,Compensation25,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,26,State25
+B,7,26,Threshold25
+D,2,27,Signal26
+D,3,27,Reference26
+-D,4,27,Delta26
+D,5,27,Compensation26,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,27,State26
+B,7,27,Threshold26
+D,2,28,Signal27
+D,3,28,Reference27
+-D,4,28,Delta27
+D,5,28,Compensation27,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,28,State27
+B,7,28,Threshold27
+D,2,29,Signal28
+D,3,29,Reference28
+-D,4,29,Delta28
+D,5,29,Compensation28,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,29,State28
+B,7,29,Threshold28
+D,2,30,Signal29
+D,3,30,Reference29
+-D,4,30,Delta29
+D,5,30,Compensation29,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,30,State29
+B,7,30,Threshold29
+D,2,31,Signal30
+D,3,31,Reference30
+-D,4,31,Delta30
+D,5,31,Compensation30,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,31,State30
+B,7,31,Threshold30
+D,2,32,Signal31
+D,3,32,Reference31
+-D,4,32,Delta31
+D,5,32,Compensation31,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,32,State31
+B,7,32,Threshold31
+D,2,33,Signal32
+D,3,33,Reference32
+-D,4,33,Delta32
+D,5,33,Compensation32,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,33,State32
+B,7,33,Threshold32
+D,2,34,Signal33
+D,3,34,Reference33
+-D,4,34,Delta33
+D,5,34,Compensation33,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,34,State33
+B,7,34,Threshold33
+D,2,35,Signal34
+D,3,35,Reference34
+-D,4,35,Delta34
+D,5,35,Compensation34,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,35,State34
+B,7,35,Threshold34
+D,2,36,Signal35
+D,3,36,Reference35
+-D,4,36,Delta35
+D,5,36,Compensation35,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,36,State35
+B,7,36,Threshold35
+D,2,37,Signal36
+D,3,37,Reference36
+-D,4,37,Delta36
+D,5,37,Compensation36,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,37,State36
+B,7,37,Threshold36
+D,2,38,Signal37
+D,3,38,Reference37
+-D,4,38,Delta37
+D,5,38,Compensation37,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,38,State37
+B,7,38,Threshold37
+D,2,39,Signal38
+D,3,39,Reference38
+-D,4,39,Delta38
+D,5,39,Compensation38,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,39,State38
+B,7,39,Threshold38
+D,2,40,Signal39
+D,3,40,Reference39
+-D,4,40,Delta39
+D,5,40,Compensation39,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,40,State39
+B,7,40,Threshold39
+D,2,41,Signal40
+D,3,41,Reference40
+-D,4,41,Delta40
+D,5,41,Compensation40,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,41,State40
+B,7,41,Threshold40
+D,2,42,Signal41
+D,3,42,Reference41
+-D,4,42,Delta41
+D,5,42,Compensation41,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,42,State41
+B,7,42,Threshold41
+D,2,43,Signal42
+D,3,43,Reference42
+-D,4,43,Delta42
+D,5,43,Compensation42,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,43,State42
+B,7,43,Threshold42
+D,2,44,Signal43
+D,3,44,Reference43
+-D,4,44,Delta43
+D,5,44,Compensation43,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,44,State43
+B,7,44,Threshold43
+D,2,45,Signal44
+D,3,45,Reference44
+-D,4,45,Delta44
+D,5,45,Compensation44,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,45,State44
+B,7,45,Threshold44
+D,2,46,Signal45
+D,3,46,Reference45
+-D,4,46,Delta45
+D,5,46,Compensation45,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,46,State45
+B,7,46,Threshold45
+D,2,47,Signal46
+D,3,47,Reference46
+-D,4,47,Delta46
+D,5,47,Compensation46,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,47,State46
+B,7,47,Threshold46
+D,2,48,Signal47
+D,3,48,Reference47
+-D,4,48,Delta47
+D,5,48,Compensation47,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,48,State47
+B,7,48,Threshold47
+D,2,49,Signal48
+D,3,49,Reference48
+-D,4,49,Delta48
+D,5,49,Compensation48,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,49,State48
+B,7,49,Threshold48
+D,2,50,Signal49
+D,3,50,Reference49
+-D,4,50,Delta49
+D,5,50,Compensation49,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,50,State49
+B,7,50,Threshold49
+D,2,51,Signal50
+D,3,51,Reference50
+-D,4,51,Delta50
+D,5,51,Compensation50,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,51,State50
+B,7,51,Threshold50
+D,2,52,Signal51
+D,3,52,Reference51
+-D,4,52,Delta51
+D,5,52,Compensation51,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,52,State51
+B,7,52,Threshold51
+D,2,53,Signal52
+D,3,53,Reference52
+-D,4,53,Delta52
+D,5,53,Compensation52,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,53,State52
+B,7,53,Threshold52
+D,2,54,Signal53
+D,3,54,Reference53
+-D,4,54,Delta53
+D,5,54,Compensation53,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,54,State53
+B,7,54,Threshold53
+D,2,55,Signal54
+D,3,55,Reference54
+-D,4,55,Delta54
+D,5,55,Compensation54,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,55,State54
+B,7,55,Threshold54
+D,2,56,Signal55
+D,3,56,Reference55
+-D,4,56,Delta55
+D,5,56,Compensation55,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,56,State55
+B,7,56,Threshold55
+D,2,57,Signal56
+D,3,57,Reference56
+-D,4,57,Delta56
+D,5,57,Compensation56,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,57,State56
+B,7,57,Threshold56
+D,2,58,Signal57
+D,3,58,Reference57
+-D,4,58,Delta57
+D,5,58,Compensation57,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,58,State57
+B,7,58,Threshold57
+D,2,59,Signal58
+D,3,59,Reference58
+-D,4,59,Delta58
+D,5,59,Compensation58,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,59,State58
+B,7,59,Threshold58
+D,2,60,Signal59
+D,3,60,Reference59
+-D,4,60,Delta59
+D,5,60,Compensation59,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,60,State59
+B,7,60,Threshold59
+D,2,61,Signal60
+D,3,61,Reference60
+-D,4,61,Delta60
+D,5,61,Compensation60,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,61,State60
+B,7,61,Threshold60
+D,2,62,Signal61
+D,3,62,Reference61
+-D,4,62,Delta61
+D,5,62,Compensation61,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,62,State61
+B,7,62,Threshold61
+D,2,63,Signal62
+D,3,63,Reference62
+-D,4,63,Delta62
+D,5,63,Compensation62,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,63,State62
+B,7,63,Threshold62
+D,2,64,Signal63
+D,3,64,Reference63
+-D,4,64,Delta63
+D,5,64,Compensation63,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,64,State63
+B,7,64,Threshold63
+D,2,65,Signal64
+D,3,65,Reference64
+-D,4,65,Delta64
+D,5,65,Compensation64,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,65,State64
+B,7,65,Threshold64
+D,2,66,Signal65
+D,3,66,Reference65
+-D,4,66,Delta65
+D,5,66,Compensation65,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,66,State65
+B,7,66,Threshold65
+D,2,67,Signal66
+D,3,67,Reference66
+-D,4,67,Delta66
+D,5,67,Compensation66,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,67,State66
+B,7,67,Threshold66
+D,2,68,Signal67
+D,3,68,Reference67
+-D,4,68,Delta67
+D,5,68,Compensation67,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,68,State67
+B,7,68,Threshold67
+D,2,69,Signal68
+D,3,69,Reference68
+-D,4,69,Delta68
+D,5,69,Compensation68,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,69,State68
+B,7,69,Threshold68
+D,2,70,Signal69
+D,3,70,Reference69
+-D,4,70,Delta69
+D,5,70,Compensation69,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,70,State69
+B,7,70,Threshold69
+D,2,71,Signal70
+D,3,71,Reference70
+-D,4,71,Delta70
+D,5,71,Compensation70,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,71,State70
+B,7,71,Threshold70
+D,2,72,Signal71
+D,3,72,Reference71
+-D,4,72,Delta71
+D,5,72,Compensation71,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,72,State71
+B,7,72,Threshold71
+D,2,73,Signal72
+D,3,73,Reference72
+-D,4,73,Delta72
+D,5,73,Compensation72,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,73,State72
+B,7,73,Threshold72
+D,2,74,Signal73
+D,3,74,Reference73
+-D,4,74,Delta73
+D,5,74,Compensation73,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,74,State73
+B,7,74,Threshold73
+D,2,75,Signal74
+D,3,75,Reference74
+-D,4,75,Delta74
+D,5,75,Compensation74,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,75,State74
+B,7,75,Threshold74
+D,2,76,Signal75
+D,3,76,Reference75
+-D,4,76,Delta75
+D,5,76,Compensation75,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,76,State75
+B,7,76,Threshold75
+D,2,77,Signal76
+D,3,77,Reference76
+-D,4,77,Delta76
+D,5,77,Compensation76,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,77,State76
+B,7,77,Threshold76
+D,2,78,Signal77
+D,3,78,Reference77
+-D,4,78,Delta77
+D,5,78,Compensation77,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,78,State77
+B,7,78,Threshold77
+D,2,79,Signal78
+D,3,79,Reference78
+-D,4,79,Delta78
+D,5,79,Compensation78,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,79,State78
+B,7,79,Threshold78
+D,2,80,Signal79
+D,3,80,Reference79
+-D,4,80,Delta79
+D,5,80,Compensation79,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,80,State79
+B,7,80,Threshold79
+D,2,81,Signal80
+D,3,81,Reference80
+-D,4,81,Delta80
+D,5,81,Compensation80,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,81,State80
+B,7,81,Threshold80
+D,2,82,Signal81
+D,3,82,Reference81
+-D,4,82,Delta81
+D,5,82,Compensation81,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,82,State81
+B,7,82,Threshold81
+D,2,83,Signal82
+D,3,83,Reference82
+-D,4,83,Delta82
+D,5,83,Compensation82,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,83,State82
+B,7,83,Threshold82
+D,2,84,Signal83
+D,3,84,Reference83
+-D,4,84,Delta83
+D,5,84,Compensation83,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,84,State83
+B,7,84,Threshold83
+D,2,85,Signal84
+D,3,85,Reference84
+-D,4,85,Delta84
+D,5,85,Compensation84,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,85,State84
+B,7,85,Threshold84
+D,2,86,Signal85
+D,3,86,Reference85
+-D,4,86,Delta85
+D,5,86,Compensation85,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,86,State85
+B,7,86,Threshold85
+D,2,87,Signal86
+D,3,87,Reference86
+-D,4,87,Delta86
+D,5,87,Compensation86,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,87,State86
+B,7,87,Threshold86
+D,2,88,Signal87
+D,3,88,Reference87
+-D,4,88,Delta87
+D,5,88,Compensation87,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,88,State87
+B,7,88,Threshold87
+D,2,89,Signal88
+D,3,89,Reference88
+-D,4,89,Delta88
+D,5,89,Compensation88,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,89,State88
+B,7,89,Threshold88
+D,2,90,Signal89
+D,3,90,Reference89
+-D,4,90,Delta89
+D,5,90,Compensation89,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,90,State89
+B,7,90,Threshold89
+D,2,91,Signal90
+D,3,91,Reference90
+-D,4,91,Delta90
+D,5,91,Compensation90,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,91,State90
+B,7,91,Threshold90
+D,2,92,Signal91
+D,3,92,Reference91
+-D,4,92,Delta91
+D,5,92,Compensation91,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,92,State91
+B,7,92,Threshold91
+D,2,93,Signal92
+D,3,93,Reference92
+-D,4,93,Delta92
+D,5,93,Compensation92,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,93,State92
+B,7,93,Threshold92
+D,2,94,Signal93
+D,3,94,Reference93
+-D,4,94,Delta93
+D,5,94,Compensation93,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,94,State93
+B,7,94,Threshold93
+D,2,95,Signal94
+D,3,95,Reference94
+-D,4,95,Delta94
+D,5,95,Compensation94,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,95,State94
+B,7,95,Threshold94
+D,2,96,Signal95
+D,3,96,Reference95
+-D,4,96,Delta95
+D,5,96,Compensation95,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,96,State95
+B,7,96,Threshold95
+D,2,97,Signal96
+D,3,97,Reference96
+-D,4,97,Delta96
+D,5,97,Compensation96,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,97,State96
+B,7,97,Threshold96
+D,2,98,Signal97
+D,3,98,Reference97
+-D,4,98,Delta97
+D,5,98,Compensation97,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,98,State97
+B,7,98,Threshold97
+D,2,99,Signal98
+D,3,99,Reference98
+-D,4,99,Delta98
+D,5,99,Compensation98,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,99,State98
+B,7,99,Threshold98
+D,2,100,Signal99
+D,3,100,Reference99
+-D,4,100,Delta99
+D,5,100,Compensation99,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,100,State99
+B,7,100,Threshold99
+D,2,101,Signal100
+D,3,101,Reference100
+-D,4,101,Delta100
+D,5,101,Compensation100,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,101,State100
+B,7,101,Threshold100
+D,2,102,Signal101
+D,3,102,Reference101
+-D,4,102,Delta101
+D,5,102,Compensation101,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,102,State101
+B,7,102,Threshold101
+D,2,103,Signal102
+D,3,103,Reference102
+-D,4,103,Delta102
+D,5,103,Compensation102,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,103,State102
+B,7,103,Threshold102
+D,2,104,Signal103
+D,3,104,Reference103
+-D,4,104,Delta103
+D,5,104,Compensation103,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,104,State103
+B,7,104,Threshold103
+D,2,105,Signal104
+D,3,105,Reference104
+-D,4,105,Delta104
+D,5,105,Compensation104,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,105,State104
+B,7,105,Threshold104
+D,2,106,Signal105
+D,3,106,Reference105
+-D,4,106,Delta105
+D,5,106,Compensation105,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,106,State105
+B,7,106,Threshold105
+D,2,107,Signal106
+D,3,107,Reference106
+-D,4,107,Delta106
+D,5,107,Compensation106,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,107,State106
+B,7,107,Threshold106
+D,2,108,Signal107
+D,3,108,Reference107
+-D,4,108,Delta107
+D,5,108,Compensation107,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,108,State107
+B,7,108,Threshold107
+D,2,109,Signal108
+D,3,109,Reference108
+-D,4,109,Delta108
+D,5,109,Compensation108,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,109,State108
+B,7,109,Threshold108
+D,2,110,Signal109
+D,3,110,Reference109
+-D,4,110,Delta109
+D,5,110,Compensation109,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,110,State109
+B,7,110,Threshold109
+D,2,111,Signal110
+D,3,111,Reference110
+-D,4,111,Delta110
+D,5,111,Compensation110,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,111,State110
+B,7,111,Threshold110
+D,2,112,Signal111
+D,3,112,Reference111
+-D,4,112,Delta111
+D,5,112,Compensation111,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,112,State111
+B,7,112,Threshold111
+D,2,113,Signal112
+D,3,113,Reference112
+-D,4,113,Delta112
+D,5,113,Compensation112,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,113,State112
+B,7,113,Threshold112
+D,2,114,Signal113
+D,3,114,Reference113
+-D,4,114,Delta113
+D,5,114,Compensation113,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,114,State113
+B,7,114,Threshold113
+D,2,115,Signal114
+D,3,115,Reference114
+-D,4,115,Delta114
+D,5,115,Compensation114,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,115,State114
+B,7,115,Threshold114
+D,2,116,Signal115
+D,3,116,Reference115
+-D,4,116,Delta115
+D,5,116,Compensation115,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,116,State115
+B,7,116,Threshold115
+D,2,117,Signal116
+D,3,117,Reference116
+-D,4,117,Delta116
+D,5,117,Compensation116,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,117,State116
+B,7,117,Threshold116
+D,2,118,Signal117
+D,3,118,Reference117
+-D,4,118,Delta117
+D,5,118,Compensation117,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,118,State117
+B,7,118,Threshold117
+D,2,119,Signal118
+D,3,119,Reference118
+-D,4,119,Delta118
+D,5,119,Compensation118,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,119,State118
+B,7,119,Threshold118
+D,2,120,Signal119
+D,3,120,Reference119
+-D,4,120,Delta119
+D,5,120,Compensation119,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,120,State119
+B,7,120,Threshold119
+D,2,121,Signal120
+D,3,121,Reference120
+-D,4,121,Delta120
+D,5,121,Compensation120,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,121,State120
+B,7,121,Threshold120
+D,2,122,Signal121
+D,3,122,Reference121
+-D,4,122,Delta121
+D,5,122,Compensation121,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,122,State121
+B,7,122,Threshold121
+D,2,123,Signal122
+D,3,123,Reference122
+-D,4,123,Delta122
+D,5,123,Compensation122,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,123,State122
+B,7,123,Threshold122
+D,2,124,Signal123
+D,3,124,Reference123
+-D,4,124,Delta123
+D,5,124,Compensation123,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,124,State123
+B,7,124,Threshold123
+D,2,125,Signal124
+D,3,125,Reference124
+-D,4,125,Delta124
+D,5,125,Compensation124,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,125,State124
+B,7,125,Threshold124
+D,2,126,Signal125
+D,3,126,Reference125
+-D,4,126,Delta125
+D,5,126,Compensation125,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,126,State125
+B,7,126,Threshold125
+D,2,127,Signal126
+D,3,127,Reference126
+-D,4,127,Delta126
+D,5,127,Compensation126,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,127,State126
+B,7,127,Threshold126
+D,2,128,Signal127
+D,3,128,Reference127
+-D,4,128,Delta127
+D,5,128,Compensation127,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,128,State127
+B,7,128,Threshold127
+D,2,129,Signal128
+D,3,129,Reference128
+-D,4,129,Delta128
+D,5,129,Compensation128,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,129,State128
+B,7,129,Threshold128
+D,2,130,Signal129
+D,3,130,Reference129
+-D,4,130,Delta129
+D,5,130,Compensation129,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,130,State129
+B,7,130,Threshold129
+D,2,131,Signal130
+D,3,131,Reference130
+-D,4,131,Delta130
+D,5,131,Compensation130,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,131,State130
+B,7,131,Threshold130
+D,2,132,Signal131
+D,3,132,Reference131
+-D,4,132,Delta131
+D,5,132,Compensation131,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,132,State131
+B,7,132,Threshold131
+D,2,133,Signal132
+D,3,133,Reference132
+-D,4,133,Delta132
+D,5,133,Compensation132,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,133,State132
+B,7,133,Threshold132
+D,2,134,Signal133
+D,3,134,Reference133
+-D,4,134,Delta133
+D,5,134,Compensation133,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,134,State133
+B,7,134,Threshold133
+D,2,135,Signal134
+D,3,135,Reference134
+-D,4,135,Delta134
+D,5,135,Compensation134,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,135,State134
+B,7,135,Threshold134
+D,2,136,Signal135
+D,3,136,Reference135
+-D,4,136,Delta135
+D,5,136,Compensation135,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,136,State135
+B,7,136,Threshold135
+D,2,137,Signal136
+D,3,137,Reference136
+-D,4,137,Delta136
+D,5,137,Compensation136,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,137,State136
+B,7,137,Threshold136
+D,2,138,Signal137
+D,3,138,Reference137
+-D,4,138,Delta137
+D,5,138,Compensation137,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,138,State137
+B,7,138,Threshold137
+D,2,139,Signal138
+D,3,139,Reference138
+-D,4,139,Delta138
+D,5,139,Compensation138,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,139,State138
+B,7,139,Threshold138
+D,2,140,Signal139
+D,3,140,Reference139
+-D,4,140,Delta139
+D,5,140,Compensation139,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,140,State139
+B,7,140,Threshold139
+D,2,141,Signal140
+D,3,141,Reference140
+-D,4,141,Delta140
+D,5,141,Compensation140,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,141,State140
+B,7,141,Threshold140
+D,2,142,Signal141
+D,3,142,Reference141
+-D,4,142,Delta141
+D,5,142,Compensation141,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,142,State141
+B,7,142,Threshold141
+D,2,143,Signal142
+D,3,143,Reference142
+-D,4,143,Delta142
+D,5,143,Compensation142,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,143,State142
+B,7,143,Threshold142
+D,2,144,Signal143
+D,3,144,Reference143
+-D,4,144,Delta143
+D,5,144,Compensation143,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,144,State143
+B,7,144,Threshold143
+D,2,145,Signal144
+D,3,145,Reference144
+-D,4,145,Delta144
+D,5,145,Compensation144,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,145,State144
+B,7,145,Threshold144
+D,2,146,Signal145
+D,3,146,Reference145
+-D,4,146,Delta145
+D,5,146,Compensation145,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,146,State145
+B,7,146,Threshold145
+D,2,147,Signal146
+D,3,147,Reference146
+-D,4,147,Delta146
+D,5,147,Compensation146,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,147,State146
+B,7,147,Threshold146
+D,2,148,Signal147
+D,3,148,Reference147
+-D,4,148,Delta147
+D,5,148,Compensation147,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,148,State147
+B,7,148,Threshold147
+D,2,149,Signal148
+D,3,149,Reference148
+-D,4,149,Delta148
+D,5,149,Compensation148,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,149,State148
+B,7,149,Threshold148
+D,2,150,Signal149
+D,3,150,Reference149
+-D,4,150,Delta149
+D,5,150,Compensation149,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,150,State149
+B,7,150,Threshold149
+D,2,151,Signal150
+D,3,151,Reference150
+-D,4,151,Delta150
+D,5,151,Compensation150,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,151,State150
+B,7,151,Threshold150
+D,2,152,Signal151
+D,3,152,Reference151
+-D,4,152,Delta151
+D,5,152,Compensation151,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,152,State151
+B,7,152,Threshold151
+D,2,153,Signal152
+D,3,153,Reference152
+-D,4,153,Delta152
+D,5,153,Compensation152,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,153,State152
+B,7,153,Threshold152
+D,2,154,Signal153
+D,3,154,Reference153
+-D,4,154,Delta153
+D,5,154,Compensation153,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,154,State153
+B,7,154,Threshold153
+D,2,155,Signal154
+D,3,155,Reference154
+-D,4,155,Delta154
+D,5,155,Compensation154,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,155,State154
+B,7,155,Threshold154
+D,2,156,Signal155
+D,3,156,Reference155
+-D,4,156,Delta155
+D,5,156,Compensation155,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,156,State155
+B,7,156,Threshold155
+D,2,157,Signal156
+D,3,157,Reference156
+-D,4,157,Delta156
+D,5,157,Compensation156,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,157,State156
+B,7,157,Threshold156
+D,2,158,Signal157
+D,3,158,Reference157
+-D,4,158,Delta157
+D,5,158,Compensation157,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,158,State157
+B,7,158,Threshold157
+D,2,159,Signal158
+D,3,159,Reference158
+-D,4,159,Delta158
+D,5,159,Compensation158,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,159,State158
+B,7,159,Threshold158
+D,2,160,Signal159
+D,3,160,Reference159
+-D,4,160,Delta159
+D,5,160,Compensation159,F,(variable & 0x0F)*0.00675+((variable >> 4) & 0x0F)*0.0675+((variable >> 8) & 0x0F)*0.675+((variable >> 12) & 0x3) * 6.75
+B,6,160,State159
+B,7,160,Threshold159
+
+
+
+
+
+
+
+
+
+
+B,9,1,QTouchLibError
+
+B,1,2,FRAME_END
